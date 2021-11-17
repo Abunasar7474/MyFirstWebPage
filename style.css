@@ -1,0 +1,52 @@
+/*CSS Reset*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+
+.nav ul{
+    list-style: none;
+    background-color: black;  
+    text-align: right;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.nav li{
+    display:inline-block;
+
+}
+.nav a{
+     text-decoration: none;
+     color: burlywood;
+     width: 100px;
+     display: block;
+     padding: 15px;
+     font-size: 17px;
+     font-family: helvetica;
+     transition: 0.4s;
+
+}
+.nav a:hover{
+    background-color: crimson;
+}
+
+.text{
+margin-left:px;  
+margin-bottom:200px ;  
+}
+#img{
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.photos{
+ display: block;
+ display: inline-block;
+ margin: 15px;
+
+}
+
