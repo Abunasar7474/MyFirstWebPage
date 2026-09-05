@@ -1,50 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title
-    >myfirst web page in html </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff4b16" />
+    <title>JanBazaar | Har Dukaan, Ab Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+      <symbol id="i-shop" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 5h18l-2 5H5L3 5Z"/><path d="M8 10v4M16 10v4M9 20v-5h6v5"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2.5 21c0-4 2.7-6.6 6.5-6.6s6.5 2.6 6.5 6.6"/><path d="M16 4.8a3.3 3.3 0 0 1 0 6.3M17 14.8c2.7.3 4.5 2.6 4.5 5.3"/></symbol>
+      <symbol id="i-heart-pin" viewBox="0 0 24 24"><path d="M12 21s8-5.9 8-12.3c0-4.4-5.3-6.2-8-2.5-2.7-3.7-8-1.9-8 2.5C4 15.1 12 21 12 21Z"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+      <symbol id="i-return" viewBox="0 0 24 24"><path d="M7 7H3V3M3 7c2.2-2.5 5.3-4 8.8-4C18 3 22 7.3 22 13s-4.5 8-10 8c-3.5 0-6.6-1.7-8.5-4.4"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 10a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 22h4"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.4h10.8L21 8H7"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M8.5 11h7M8.5 15h7"/></symbol>
+      <symbol id="i-scooter" viewBox="0 0 24 24"><path d="M3 16h11l2-6h3l2 4h-5M7 16l2-6h5M7 16l-2 3M16 16l2 3"/><circle cx="5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v5H5a1 1 0 0 1-1-1v-4ZM20 14h-3v5h2a1 1 0 0 0 1-1v-4ZM17 19c-1.2 2-3.3 2-5 2"/></symbol>
+    </svg>
 
-<body>
-      <div class="nav">
-      <ul>
-          <li class="item"><a href="#">HOME</a></li>
-          <li class="item"><a href="#">PORTFOLIO</a></li>
-          <li class="item"><a href="#">CONTACT</a></li>
-          <li class="item"><a href="#">ABOUT</a></li>
-      </ul>
-    </div>
-    <div id="img">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUmQGdYdoD3G361gFFED1YKbANIGEsiySbA&usqp=CAU" width="300" height="300" alt="">
-       </div>
-        <ul class="text">
-           <h1> My first Web Page </h1>
-           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio, quam, nulla suscipit numquam ullam eligendi error earum maiores modi odit? Corporis nam saepe mollitia eveniet placeat veritatis necessitatibus vero.</h2>
-       
-    </div>
-    <div class="photos">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCSoAcwVcztL6bDnd9BCVb6xaov4RFH7aDw&usqp=CAU"  alt="Abunasar">
-        <h3>Geekster</h3>
-      </div>
-      <div class="photos">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdemUBBi0RnMFfk9QgSZ5qfbKze7hPDnqnfA&usqp=CAU" alt="Abunasar">
-        <ul>
-        <h3>Geekster</h3>
-    </ul>
-      </div>
-      <div class="photos">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrP808jK50Q9nQEWyYZK6g1NJsGRZUnmV4g&usqp=CAU" alt="Abunasar">
-        <h3>Geekster</h3>
-      </div>
-      <div class="photos">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCSoAcwVcztL6bDnd9BCVb6xaov4RFH7aDw&usqp=CAU" alt="Abunasar">
-        <h3>Geekster</h3>
-      </div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="JanBazaar home">
+        <span class="brand-mark"><b>J</b><i>B</i></span>
+        <span class="brand-copy"><strong>Jan<span>Bazaar</span></strong><em>Har Dukaan, Ab Online</em></span>
+      </a>
 
-    </div>
-</body>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" href="#top">Home</a><a href="#">About Us</a><a href="#">For Sellers</a><a href="#works">How It Works</a><a href="#categories">Categories</a><a href="#partner">Become a Partner <b>⌄</b></a><a href="#">Support</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="location-wrap">
+          <button class="location-button" type="button" aria-expanded="false"><svg><use href="#i-pin"/></svg><span>Mithapur, Patna</span><b>⌄</b></button>
+          <div class="location-menu" role="menu"><button>Current location</button><button>Patna, Bihar</button><button>Choose another area</button></div>
+        </div>
+        <button class="login-button desktop-only" type="button">Login</button>
+        <button class="signup-button desktop-only" type="button"><svg><use href="#i-user"/></svg> Sign Up</button>
+        <button class="bell-button mobile-only" type="button" aria-label="Notifications"><svg><use href="#i-bell"/></svg><i></i></button>
+        <button class="menu-button mobile-only" type="button" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+      </div>
+      <nav class="mobile-menu" aria-label="Mobile navigation"><a href="#top">Home</a><a href="#">About Us</a><a href="#">For Sellers</a><a href="#works">How It Works</a><a href="#categories">Categories</a><a href="#partner">Become a Partner</a><a href="#">Support</a><button type="button">Login</button></nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="landmarks" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="hero-inner">
+          <div class="hero-copy-block">
+            <p class="eyebrow">#1 Hyperlocal Shopping App</p>
+            <h1>Har Dukaan,<br><span>Ab Online</span></h1>
+            <p class="hero-description">JanBazaar se judkar ab har dukaan online.<br>Local shops se kharido, apne seher ko support karo.</p>
+            <div class="hero-buttons"><button class="primary-action shop-action" type="button"><svg><use href="#i-bag"/></svg>Shop Now <b>→</b></button><button class="secondary-action seller-action" type="button"><svg><use href="#i-shop"/></svg>Become a Seller</button></div>
+            <div class="hero-benefits">
+              <div><svg><use href="#i-shop"/></svg><p><b>Local Shops</b><span>Support Local Business</span></p></div>
+              <div><svg><use href="#i-truck"/></svg><p><b>Fast Delivery</b><span>Quick &amp; Reliable</span></p></div>
+              <div><svg><use href="#i-bag"/></svg><p><b>Secure Payments</b><span>100% Safe &amp; Secure</span></p></div>
+            </div>
+          </div>
+
+          <div class="devices" aria-label="JanBazaar shopping experience preview">
+            <div class="laptop">
+              <div class="laptop-screen"><div class="app-top"><b><svg><use href="#i-pin"/></svg> Mithapur, Patna</b><span>⌕ &nbsp; ♡ &nbsp; 🛒</span></div><div class="app-search">⌕ &nbsp; Search for products, shops, categories...</div><div class="app-banner"><div><b>LOCAL SHOPS<br>BIG SAVINGS</b><span>Support Local, Save More</span><i>Shop Now</i></div><div class="mini-basket"><span></span></div></div><div class="app-title">Categories <b>See All</b></div><div class="mini-cats"><i>🛍️<small>Grocery</small></i><i>👗<small>Fashion</small></i><i>📱<small>Mobile</small></i><i>💊<small>Medicine</small></i><i>🍔<small>Food</small></i><i>👥<small>Services</small></i></div><div class="app-title">Nearby Shops</div><div class="mini-shops"><div><span class="shop-picture shelves"></span><p>Sharma Kirana<br><b>★ 4.5</b> (120+)</p></div><div><span class="shop-picture phone-shop"></span><p>Patna Mobile Hub<br><b>★ 4.2</b> (65+)</p></div><div><span class="shop-picture med-shop"></span><p>MedPlus Pharmacy<br><b>★ 4.6</b> (90+)</p></div></div></div>
+              <div class="laptop-base"></div>
+            </div>
+            <div class="phone"><div class="phone-notch"></div><div class="phone-screen"><div class="phone-top"><b><svg><use href="#i-pin"/></svg> Mithapur, Patna⌄</b><span>♧ &nbsp; 🛒</span></div><div class="phone-search">⌕ &nbsp; Search for products, shops...</div><div class="phone-promo"><b>LOCAL SHOPS<br>BIG SAVINGS</b><i>Shop Now</i><span class="phone-basket"></span></div><strong class="phone-heading">Categories <b>See All</b></strong><div class="phone-cats"><i>🛍️</i><i>👗</i><i>📱</i><i>💊</i><i>🍔</i><i>👥</i></div><strong class="phone-heading">Nearby Shops</strong><div class="phone-shops"><div><span class="shop-picture shelves"></span><p>Sharma Kirana<br><b>★ 4.5</b></p></div><div><span class="shop-picture phone-shop"></span><p>Patna Mobile Hub<br><b>★ 4.2</b></p></div></div><div class="phone-nav">⌂ &nbsp;&nbsp; ▦ &nbsp;&nbsp; ▣ &nbsp;&nbsp; 🛒 &nbsp;&nbsp; ♙</div></div></div>
+            <div class="basket-scene" aria-hidden="true"><div class="basket-handle"></div><div class="basket-body"><i></i><i></i><i></i><i></i></div><span class="produce p1"></span><span class="produce p2"></span><span class="produce p3"></span></div>
+          </div>
+          <aside class="stats-card" aria-label="JanBazaar statistics">
+            <article><div><svg><use href="#i-shop"/></svg></div><p><b>10,000+</b><span>Local Shops</span></p></article>
+            <article><div><svg><use href="#i-users"/></svg></div><p><b>50,000+</b><span>Happy Customers</span></p></article>
+            <article><div><svg><use href="#i-heart-pin"/></svg></div><p><b>25+</b><span>Cities</span></p></article>
+            <article><div><svg><use href="#i-lock"/></svg></div><p><b>100%</b><span>Secure Payments</span></p></article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="mobile-stats stats-card" aria-label="JanBazaar statistics">
+        <article><div><svg><use href="#i-shop"/></svg></div><p><b>10,000+</b><span>Local Shops</span></p></article><article><div><svg><use href="#i-users"/></svg></div><p><b>50,000+</b><span>Happy Customers</span></p></article><article><div><svg><use href="#i-heart-pin"/></svg></div><p><b>25+</b><span>Cities</span></p></article><article><div><svg><use href="#i-lock"/></svg></div><p><b>100%</b><span>Secure Payments</span></p></article>
+      </section>
+
+      <div class="page-width">
+        <section class="feature-strip" aria-label="Explore JanBazaar">
+          <article><svg><use href="#i-shop"/></svg><p><b>Become a Seller</b><span>Start your online business and<br class="desktop-break"> reach thousands of customers</span></p><i>›</i></article>
+          <article><svg><use href="#i-scooter"/></svg><p><b>Become a Delivery Partner</b><span>Earn money by delivering orders<br class="desktop-break"> in your city</span></p><i>›</i></article>
+          <article><svg><use href="#i-grid"/></svg><p><b>Wide Categories</b><span>Choose from a wide range of<br class="desktop-break"> products and services</span></p><i>›</i></article>
+          <article><svg><use href="#i-return"/></svg><p><b>Easy Returns</b><span>Hassle-free returns and<br class="desktop-break"> customer support</span></p><i>›</i></article>
+        </section>
+
+        <div class="desktop-content-row">
+          <section class="content-section categories-section" id="categories"><div class="section-title"><h2>Shop by Categories</h2><button class="show-categories" type="button">View All Categories <b>→</b></button></div><div class="category-row scroll-row"><button class="category grocery"><span>▰</span><b>Grocery</b></button><button class="category fashion"><span>♙</span><b>Fashion</b></button><button class="category mobile"><span>▯</span><b>Mobile</b></button><button class="category medicine"><span>✚</span><b>Medicine</b></button><button class="category food"><span>≋</span><b>Food</b></button><button class="category electronics"><span>◉</span><b>Electronics</b></button><button class="category home"><span>⌂</span><b>Home</b></button><button class="category more"><span>●●<br>●●</span><b>More</b></button></div></section>
+          <section class="content-section shops-section"><div class="section-title"><h2>Nearby Shops</h2><button class="show-shops" type="button">See All <b>→</b></button></div><div class="shop-row scroll-row"><article class="nearby-card"><span class="store-image shelves"></span><p><b>Sharma Kirana</b><i>★ 4.5 (120+)</i><small>◉ &nbsp;0.4 km away</small></p></article><article class="nearby-card"><span class="store-image phone-shop"></span><p><b>Patna Mobile Hub</b><i>★ 4.2 (65+)</i><small>◉ &nbsp;0.6 km away</small></p></article><article class="nearby-card"><span class="store-image med-shop"></span><p><b>MedPlus Pharmacy</b><i>★ 4.6 (90+)</i><small>◉ &nbsp;0.8 km away</small></p></article><article class="nearby-card"><span class="store-image fresh-shop"></span><p><b>Fresh Basket Store</b><i>★ 4.3 (70+)</i><small>◉ &nbsp;0.8 km away</small></p></article></div></section>
+        </div>
+
+        <section class="content-section works-section" id="works"><div class="section-title"><h2>How JanBazaar Works?</h2><button type="button">See How <b>→</b></button></div><div class="works"><article><span><svg><use href="#i-pin"/></svg></span><i></i><p><b><em>1</em>Choose Location</b><small>Allow location access<br>to see local shops</small></p></article><article><span><svg><use href="#i-bag"/></svg></span><i></i><p><b><em>2</em>Browse &amp; Shop</b><small>Explore products from<br>nearby shops</small></p></article><article><span><svg><use href="#i-clipboard"/></svg></span><i></i><p><b><em>3</em>Place Order</b><small>Choose your items<br>and place order</small></p></article><article><span><svg><use href="#i-scooter"/></svg></span><p><b><em>4</em>Fast Delivery</b><small>Get your order delivered<br>to your doorstep</small></p></article></div></section>
+
+        <section class="promotions" id="partner"><article class="delivery-promo"><div><h3>Become a Delivery Partner</h3><p>Earn money by delivering orders in your city.</p><button type="button">Join Now &nbsp;→</button></div><span class="rider" aria-hidden="true"><i></i><b></b></span></article><button class="large-shop-action shop-action" type="button"><svg><use href="#i-bag"/></svg><span>Shop Now</span><b>→</b></button><article class="owner-promo"><div class="owner-icon"><svg><use href="#i-shop"/></svg></div><p><b>Are you a <span>Shop Owner?</span></b><small>Join JanBazaar and take your business<br>online in just a few easy clicks.</small><button class="seller-action" type="button">Register Your Shop &nbsp;→</button><em>It's Free &amp; Easy!</em></p><i aria-hidden="true"></i></article></section>
+
+        <section class="bottom-benefits"><article><svg><use href="#i-return"/></svg><p><b>Easy Setup</b><span>Quick &amp; simple<br>registration</span></p></article><article><svg><use href="#i-users"/></svg><p><b>Reach More</b><span>Connect with thousands of<br>local customers</span></p></article><article><svg><use href="#i-grid"/></svg><p><b>Grow Business</b><span>Increase sales and<br>grow your business</span></p></article><article><svg><use href="#i-headset"/></svg><p><b>24×7 Support</b><span>We're here to help you<br>anytime, anywhere</span></p></article></section>
+      </div>
+    </main>
+
+    <nav class="bottom-nav mobile-only" aria-label="Mobile primary navigation"><button class="active" type="button"><svg><use href="#i-shop"/></svg><span>Home</span></button><button type="button"><svg><use href="#i-grid"/></svg><span>Categories</span></button><button type="button"><svg><use href="#i-bag"/></svg><span>Orders</span></button><button type="button"><svg><use href="#i-cart"/></svg><span>Cart</span></button><button type="button"><svg><use href="#i-user"/></svg><span>Profile</span></button></nav>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
