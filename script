@@ -1,0 +1,70 @@
+/* Small, purposeful interactions for the static JanBazaar home page. */
+const qs = (selector, scope = document) => scope.querySelector(selector);
+const qsa = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+const toast = qs('.toast');
+let toastTimer;
+
+function notify(message) {
+  toast.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+const menuButton = qs('.menu-button');
+const mobileMenu = qs('.mobile-menu');
+const locationButton = qs('.location-button');
+const locationMenu = qs('.location-menu');
+
+menuButton?.addEventListener('click', (event) => {
+  event.stopPropagation();
+  const isOpen = mobileMenu.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', isOpen);
+  locationMenu.classList.remove('open');
+  locationButton.setAttribute('aria-expanded', 'false');
+});
+
+locationButton.addEventListener('click', (event) => {
+  event.stopPropagation();
+  const isOpen = locationMenu.classList.toggle('open');
+  locationButton.setAttribute('aria-expanded', isOpen);
+  mobileMenu.classList.remove('open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+});
+
+locationMenu.addEventListener('click', (event) => {
+  const choice = event.target.closest('button');
+  if (!choice) return;
+  if (choice.textContent.includes('Patna')) qs('.location-button span').textContent = 'Mithapur, Patna';
+  locationMenu.classList.remove('open');
+  locationButton.setAttribute('aria-expanded', 'false');
+  notify(`${choice.textContent.trim()} selected`);
+});
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.location-wrap')) {
+    locationMenu.classList.remove('open');
+    locationButton.setAttribute('aria-expanded', 'false');
+  }
+  if (!event.target.closest('.mobile-menu') && !event.target.closest('.menu-button')) {
+    mobileMenu.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  }
+});
+
+qsa('.shop-action').forEach(button => button.addEventListener('click', () => notify('Opening JanBazaar shopping demo...')));
+qsa('.seller-action').forEach(button => button.addEventListener('click', () => notify('Seller registration demo opened.')));
+qsa('.show-categories').forEach(button => button.addEventListener('click', () => {
+  qs('.category-row').scrollBy({ left: 260, behavior: 'smooth' });
+  notify('More categories revealed');
+}));
+qsa('.show-shops').forEach(button => button.addEventListener('click', () => {
+  qs('.shop-row').scrollBy({ left: 250, behavior: 'smooth' });
+  notify('More nearby shops revealed');
+}));
+
+qsa('.bottom-nav button').forEach(button => button.addEventListener('click', () => {
+  qsa('.bottom-nav button').forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  notify(`${qs('span', button).textContent} selected`);
+}));
